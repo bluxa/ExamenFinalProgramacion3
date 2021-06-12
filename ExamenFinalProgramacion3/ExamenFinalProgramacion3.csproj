@@ -51,6 +51,7 @@
     <Compile Include="ArbolAvl\Logical.cs" />
     <Compile Include="ArbolAvl\Nodo.cs" />
     <Compile Include="ArbolAvl\NodoAvl.cs" />
+    <Compile Include="Comparador.cs" />
     <Compile Include="Estudiante.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
