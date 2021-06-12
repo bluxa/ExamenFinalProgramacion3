@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace ExamenFinalProgramacion3.ArbolAvl
 {
-    class NodoAvl
+    public class NodoAvl:Nodo
     {
+        public int fe;
+
+        public NodoAvl(object valorDato) : base(valorDato)
+        {
+            fe = 0;
+        }
+
+        public NodoAvl(object valorDato, NodoAvl ramaIzdo, NodoAvl ramaDcho) : base(ramaIzdo, valorDato, ramaDcho)
+        {
+            fe = 0;
+        }
+
     }
 }

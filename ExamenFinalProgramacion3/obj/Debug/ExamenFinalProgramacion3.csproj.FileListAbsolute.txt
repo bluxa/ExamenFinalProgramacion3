@@ -1,0 +1,10 @@
+C:\Users\Admin\Source\Repos\bluxa\ExamenFinalProgramacion3\ExamenFinalProgramacion3\obj\Debug\ExamenFinalProgramacion3.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\bluxa\ExamenFinalProgramacion3\ExamenFinalProgramacion3\obj\Debug\ExamenFinalProgramacion3.Properties.Resources.resources
+C:\Users\Admin\Source\Repos\bluxa\ExamenFinalProgramacion3\ExamenFinalProgramacion3\obj\Debug\ExamenFinalProgramacion3.csproj.GenerateResource.cache
+C:\Users\Admin\Source\Repos\bluxa\ExamenFinalProgramacion3\ExamenFinalProgramacion3\obj\Debug\ExamenFinalProgramacion3.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\bluxa\ExamenFinalProgramacion3\ExamenFinalProgramacion3\bin\Debug\ExamenFinalProgramacion3.exe.config
+C:\Users\Admin\Source\Repos\bluxa\ExamenFinalProgramacion3\ExamenFinalProgramacion3\bin\Debug\ExamenFinalProgramacion3.exe
+C:\Users\Admin\Source\Repos\bluxa\ExamenFinalProgramacion3\ExamenFinalProgramacion3\bin\Debug\ExamenFinalProgramacion3.pdb
+C:\Users\Admin\Source\Repos\bluxa\ExamenFinalProgramacion3\ExamenFinalProgramacion3\obj\Debug\ExamenFinalProgramacion3.exe
+C:\Users\Admin\Source\Repos\bluxa\ExamenFinalProgramacion3\ExamenFinalProgramacion3\obj\Debug\ExamenFinalProgramacion3.pdb
+C:\Users\Admin\source\repos\bluxa\ExamenFinalProgramacion3\ExamenFinalProgramacion3\obj\Debug\ExamenFinalProgramacion3.Form1.resources
