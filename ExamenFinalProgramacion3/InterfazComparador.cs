@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamenFinalProgramacion3
 {
-    class Comparador
+    interface InterfazComparador
     {
     }
 }
