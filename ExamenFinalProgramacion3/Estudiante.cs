@@ -35,22 +35,26 @@ namespace ExamenFinalProgramacion3
 
         public bool BusquedaAvanzada(object q)
         {
-            throw new NotImplementedException();
+            Estudiante info_Usuario = (Estudiante)q;
+            return (info_Usuario.Id.StartsWith(Id) == true);
         }
 
         public bool UsuarioIgual(object q)
         {
-            throw new NotImplementedException();
+            Estudiante info_Usuario = (Estudiante)q;
+            return (info_Usuario.Id.CompareTo(Id) == 0);
         }
 
         public bool UsuarioMayor(object q)
         {
-            throw new NotImplementedException();
+            Estudiante info_Usuario = (Estudiante)q;
+            return (info_Usuario.Id.CompareTo(Id) == 1);
         }
 
         public bool UsuarioMenor(object q)
         {
-            throw new NotImplementedException();
+            Estudiante info_Usuario = (Estudiante)q;
+            return (info_Usuario.Id.CompareTo(Id) == -1);
         }
 
         public override string ToString()

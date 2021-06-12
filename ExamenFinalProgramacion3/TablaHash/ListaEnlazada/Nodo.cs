@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace ExamenFinalProgramacion3.TablaHash.ListaEnlazada
 {
-    class Nodo
+    public class Nodo
     {
+        public Object Dato;
+        public Nodo Enlace;
+        public Nodo(Object vDato)
+        {
+            Dato = vDato;
+            Enlace = null;
+        }
     }
 }
+
