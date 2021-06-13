@@ -47,6 +47,8 @@ namespace ExamenFinalProgramacion3
             
         }
 
+
+        //---RECORRIDO INORDEN
         private void button2_Click(object sender, EventArgs e)
         {
             try
@@ -65,6 +67,7 @@ namespace ExamenFinalProgramacion3
                         textBox3.Text = textBox3.Text + message;
                     }
                 }
+                button2.Enabled = false;
                 MessageBox.Show("RECORRIDO INORDEN CORRECTAMENTE");
             }
             catch (Exception ex)
@@ -73,8 +76,8 @@ namespace ExamenFinalProgramacion3
             }
             
         }
-       
-        
+
+        //---RECORRIDO PREORDEN
         private void button3_Click(object sender, EventArgs e)
         {
             try
@@ -93,6 +96,7 @@ namespace ExamenFinalProgramacion3
                         textBox3.Text = textBox3.Text + message;
                     }
                 }
+                button3.Enabled = false;
                 MessageBox.Show("RECORRIDO PREORDEN CORRECTAMENTE");
             }
             catch (Exception ex)
@@ -102,6 +106,8 @@ namespace ExamenFinalProgramacion3
             
         }
 
+
+        //---RECORRIDO POSTORDEN
         private void button4_Click(object sender, EventArgs e)
         {
             try
@@ -111,6 +117,7 @@ namespace ExamenFinalProgramacion3
                 textBox2.Text = ArbolAvl.ArbolAvl.rcpostOrden(miArbolAvl.raizArbol()).ToString();
 
                 ArbolAvl.ArbolAvl.recorridoPostOrden(miArbolAvl.raizArbol());
+                
                 foreach (var item in Program.miTablaPostOrden.tabla)
                 {
                     if (item != null)
@@ -120,6 +127,7 @@ namespace ExamenFinalProgramacion3
                         textBox3.Text = textBox3.Text + message;
                     }
                 }
+                button4.Enabled = false;
                 MessageBox.Show("RECORRIDO POSTORDEN CORRECTAMENTE");
             }
             catch (Exception ex)

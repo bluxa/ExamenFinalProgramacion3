@@ -42,11 +42,13 @@ namespace ExamenFinalProgramacion3
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(25, 23);
+            this.textBox1.Location = new System.Drawing.Point(12, 23);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 27);
+            this.textBox1.Size = new System.Drawing.Size(221, 27);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "@\"ListadoEstudiantes.csv\"";
             // 
             // button1
             // 
@@ -62,7 +64,7 @@ namespace ExamenFinalProgramacion3
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(25, 72);
+            this.button2.Location = new System.Drawing.Point(12, 72);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 32);
             this.button2.TabIndex = 2;
@@ -73,7 +75,7 @@ namespace ExamenFinalProgramacion3
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(152, 72);
+            this.button3.Location = new System.Drawing.Point(148, 72);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(101, 32);
             this.button3.TabIndex = 3;
@@ -94,11 +96,11 @@ namespace ExamenFinalProgramacion3
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(20, 169);
+            this.textBox2.Location = new System.Drawing.Point(12, 169);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(357, 204);
+            this.textBox2.Size = new System.Drawing.Size(365, 204);
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
