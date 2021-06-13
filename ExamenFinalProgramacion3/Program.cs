@@ -8,6 +8,9 @@ namespace ExamenFinalProgramacion3
 {
     static class Program
     {
+        public static TablaHash.TablaHashColision miTablaInOrden = new TablaHash.TablaHashColision();
+        public static TablaHash.TablaHashColision miTablaPostOrden = new TablaHash.TablaHashColision();
+        public static TablaHash.TablaHashColision miTablaPreOrden = new TablaHash.TablaHashColision();
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>

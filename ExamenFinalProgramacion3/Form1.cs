@@ -20,30 +20,113 @@ namespace ExamenFinalProgramacion3
         }
 
         ArbolAvl.ArbolAvl miArbolAvl = new ArbolAvl.ArbolAvl();
-
+        TablaHash.TablaHashColision TablaHash = new TablaHash.TablaHashColision();
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var reader = new StreamReader(File.OpenRead(@"ListadoEstudiantes.csv"));
-            //List<string> listA = new List<string>();
-            //List<string> listB = new List<string>();
-            var linea0 = reader.ReadLine();
-            while (!reader.EndOfStream)
+            var reader = new StreamReader(File.OpenRead(@"ListadoEstudiantes.csv"), Encoding.Default);
+            try
             {
-                var linea = reader.ReadLine();
-                var valor = linea.Split(';');
+                var linea0 = reader.ReadLine();
+                while (!reader.EndOfStream)
+                {
+                    var linea = reader.ReadLine();
+                    var valor = linea.Split(';');
 
-                //listA.Add(values[0]);
-                //listB.Add(values[1]);
-                Estudiante objEstudiante = new Estudiante(valor[0], valor[1], valor[2], valor[3], valor[4], valor[5], valor[6], valor[7]);
-                miArbolAvl.insertar(objEstudiante);
-
+                    Estudiante objEstudiante = new Estudiante(valor[0], valor[1], valor[2], valor[3], valor[4], valor[5], valor[6], valor[7]);
+                    miArbolAvl.insertar(objEstudiante);
+                }
+                MessageBox.Show("DOCUMENTO LEIDO E INSERTADO EN EL ARBOL AVL");
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("OCURRIO UN ERROR "+ex);
+            }
+            
+           
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(ArbolAvl.ArbolAvl.rcInorden(miArbolAvl.raizArbol()).ToString());
+            try
+            {
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox2.Text = ArbolAvl.ArbolAvl.rcInorden(miArbolAvl.raizArbol());
+                
+                ArbolAvl.ArbolAvl.recorridoInOrden(miArbolAvl.raizArbol());
+                foreach (var item in Program.miTablaInOrden.tabla)
+                {
+                    if (item != null)
+                    {
+                        string message = item.MuestraLista().ToString();
+
+                        textBox3.Text = textBox3.Text + message;
+                    }
+                }
+                MessageBox.Show("RECORRIDO INORDEN CORRECTAMENTE");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR EN EL RECORRIDO INORDEN "+ex);
+            }
+            
+        }
+       
+        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox2.Text = ArbolAvl.ArbolAvl.rcPreorden(miArbolAvl.raizArbol()).ToString();
+
+                ArbolAvl.ArbolAvl.recorridoInOrden(miArbolAvl.raizArbol());
+                foreach (var item in Program.miTablaPreOrden.tabla)
+                {
+                    if (item != null)
+                    {
+                        string message = item.MuestraLista().ToString();
+
+                        textBox3.Text = textBox3.Text + message;
+                    }
+                }
+                MessageBox.Show("RECORRIDO PREORDEN CORRECTAMENTE");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR EN EL PREORDEN INORDEN " + ex);
+            }
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox2.Text = ArbolAvl.ArbolAvl.rcpostOrden(miArbolAvl.raizArbol()).ToString();
+
+                ArbolAvl.ArbolAvl.recorridoPostOrden(miArbolAvl.raizArbol());
+                foreach (var item in Program.miTablaPostOrden.tabla)
+                {
+                    if (item != null)
+                    {
+                        string message = item.MuestraLista().ToString();
+
+                        textBox3.Text = textBox3.Text + message;
+                    }
+                }
+                MessageBox.Show("RECORRIDO POSTORDEN CORRECTAMENTE");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR EN EL POSTORDEN INORDEN " + ex);
+            }
+            
         }
     }
 }

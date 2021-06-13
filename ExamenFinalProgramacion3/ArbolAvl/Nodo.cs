@@ -18,7 +18,7 @@ namespace ExamenFinalProgramacion3.ArbolAvl
             datoNodo = dato;
             izq = dch = null;
         }
-
+        
         //Con este nodo ingresamos datos al arbol
         public Nodo(Nodo ramaIzq, object datoNodo, Nodo ramaDch)
         {
@@ -28,14 +28,15 @@ namespace ExamenFinalProgramacion3.ArbolAvl
         }
 
         //Si queremos saber el dato del nodo utilizamos este metodo
-        public object valorNodo()
+        public Object valorNodo()
         {
             return datoNodo;
         }
-
+        
 
         //En las inserciones,eliminaciones,busquedas etc necesitamos recorrer
         //Todo el arbol estos metodos nos ayudar obtener los enlaces para los nodos
+        
         public Nodo subarbolIzq() { return izq; }
         public Nodo subarbolDch() { return dch; }
 

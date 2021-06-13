@@ -207,58 +207,6 @@ namespace ExamenFinalProgramacion3.ArbolAvl
             return raiz;
         }
 
-        //El metodo buscar es llamada desde el form para su ejecucion
-        public Nodo buscar(Object buscado)
-        {
-            InterfazComparador dato;
-            dato = (InterfazComparador)buscado;
-
-
-            if (arbolRaiz == null)
-                return null;
-            else
-                return buscar(raizArbol(), dato);
-        }
-
-        //Metodo de buscar en el que utiliza recursividad para poder buscar en cada nodo
-        protected Nodo buscar(Nodo raizSub, InterfazComparador buscado)
-        {
-
-            if (raizSub == null)
-                return null;
-            else if (buscado.UsuarioIgual(raizSub.valorNodo()))
-                return raizSub;
-            else if (buscado.UsuarioMenor(raizSub.valorNodo()))
-                return buscar(raizSub.subarbolIzq(), buscado);
-            else
-                return buscar(raizSub.subarbolDch(), buscado);
-            return null;
-        }
-       
-
-        public string buscarAvanUsuario(Object buscado)
-        {
-            InterfazComparador dato;
-            dato = (InterfazComparador)buscado;
-            if (arbolRaiz == null)
-                return null;
-            else
-                return rcPreorden(raizArbol(), dato);
-        }
-
-        static public string rcPreorden(Nodo r, InterfazComparador dato)
-        {
-            if (r != null)
-            {
-                if (dato.BusquedaAvanzada(r.valorNodo()) == false)
-                    return rcPreorden(r.subarbolIzq(), dato) + rcPreorden(r.subarbolDch(), dato);
-
-                else if (dato.BusquedaAvanzada(r.valorNodo()) == true)
-                {
-                    return r.visitarNodo();
-                }
-            }
-            return "";
-        }
+        
     }
 }

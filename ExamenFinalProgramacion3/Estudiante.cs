@@ -59,7 +59,7 @@ namespace ExamenFinalProgramacion3
 
         public override string ToString()
         {
-            return Nombre + "," + Apellidos + "," + Id + ";";
+            return Environment.NewLine+"[" + Nombre + ",  " + Apellidos + ",  " + Id + "]"+Environment.NewLine;
         }
     }
 }

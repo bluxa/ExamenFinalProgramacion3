@@ -14,7 +14,7 @@ namespace ExamenFinalProgramacion3.TablaHash.ListaEnlazada
         {
             primero = null;
         }
-
+       
         public ListaEnlazada insertarCabezaLista(Object vDato)
         {
             Nodo nuevo;
@@ -61,5 +61,6 @@ namespace ExamenFinalProgramacion3.TablaHash.ListaEnlazada
             }
             return resultado;
         }
+        
     }
 }

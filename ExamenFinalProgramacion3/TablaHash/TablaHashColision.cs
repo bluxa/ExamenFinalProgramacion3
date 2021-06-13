@@ -9,13 +9,13 @@ namespace ExamenFinalProgramacion3.TablaHash
 {
     public class TablaHashColision
     {
-        public static readonly int M = 124;
+        public static readonly int M = 99;
         public static readonly double R = 0.618034;
         int Posicion;
         public int cont { get; set; }
 
-        ListaEnlazada.ListaEnlazada[] tabla = new ListaEnlazada.ListaEnlazada[M];
-        
+        public ListaEnlazada.ListaEnlazada[] tabla = new ListaEnlazada.ListaEnlazada[M];
+
 
         public int DispersionMod(String Clave)
         {
@@ -43,36 +43,15 @@ namespace ExamenFinalProgramacion3.TablaHash
 
         public object Buscar(String Clave)
         {
-            //lh = 89
             Posicion = DispersionMod(Clave);
 
-            //49,89,100
             if (tabla[Posicion] == null)
                 return null;
             else
                 return tabla[Posicion].BuscarNodo(Clave);
         }
 
-        //public static Queue miCola = new Queue();
-        public void Mostar()
-        {
-            foreach (var item in tabla)
-            {
-                if (item != null)
-                {
-                    string message = item.MuestraLista().ToString();
 
-                    string[] palabras = message.Split(';');
-
-                    for (int ix = 0; ix < palabras.Length; ix++)
-                    {
-                        if (palabras[ix] != "")
-                        {
-                            //miCola.Enqueue(palabras[ix]);
-                        }
-                    }
-                }
-            }
-        }
+                
     }
 }
