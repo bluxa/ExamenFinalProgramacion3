@@ -83,7 +83,7 @@ namespace ExamenFinalProgramacion3
                 textBox3.Clear();
                 textBox2.Text = ArbolAvl.ArbolAvl.rcPreorden(miArbolAvl.raizArbol()).ToString();
 
-                ArbolAvl.ArbolAvl.recorridoInOrden(miArbolAvl.raizArbol());
+                ArbolAvl.ArbolAvl.recorridoPreOrden(miArbolAvl.raizArbol());
                 foreach (var item in Program.miTablaPreOrden.tabla)
                 {
                     if (item != null)
