@@ -51,7 +51,7 @@ namespace ExamenFinalProgramacion3.TablaHash
                 return tabla[Posicion].BuscarNodo(Clave);
         }
 
-
+       
                 
     }
 }

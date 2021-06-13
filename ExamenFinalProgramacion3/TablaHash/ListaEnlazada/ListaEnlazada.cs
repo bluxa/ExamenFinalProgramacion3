@@ -61,6 +61,11 @@ namespace ExamenFinalProgramacion3.TablaHash.ListaEnlazada
             }
             return resultado;
         }
+
+        public void Vaciar()
+        {
+            primero.Enlace = null;
+        }
         
     }
 }
